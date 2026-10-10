@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071b19">
+  <title>康徕科技 · AI健康服务动态数据大屏</title>
+  <link rel="icon" href="assets/brand-icon.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="screen" aria-label="康徕科技 AI健康服务动态数据大屏">
+    <div class="loading">正在载入健康服务数据…</div>
+  </main>
+  <dialog id="detail-dialog" aria-labelledby="detail-title">
+    <button class="close-detail" type="button" aria-label="关闭详情">×</button>
+    <div class="detail-kicker">数据细分</div>
+    <h2 id="detail-title"></h2>
+    <div id="detail-content"></div>
+  </dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
