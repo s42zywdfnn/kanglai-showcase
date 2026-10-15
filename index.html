@@ -1,2 +1,29 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>青荷康康 · 数据大屏</title><meta http-equiv="refresh" content="0;url=https://kanglai-dashboard-v3-v4-1011.mystic-dune-4929.chatgpt.site/"></head><body><p>正在打开<a href="https://kanglai-dashboard-v3-v4-1011.mystic-dune-4929.chatgpt.site/">青荷康康数据大屏</a>…</p><script>location.replace("https://kanglai-dashboard-v3-v4-1011.mystic-dune-4929.chatgpt.site/")</script></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071b19">
+  <title>康徕科技 · AI健康服务动态数据大屏</title>
+  <link rel="icon" href="assets/brand-icon.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="screen" aria-label="康徕科技 AI健康服务动态数据大屏">
+    <div class="loading">正在载入健康服务数据…</div>
+  </main>
+  <dialog id="detail-dialog" aria-labelledby="detail-title">
+    <button class="close-detail" type="button" aria-label="关闭详情">×</button>
+    <div class="detail-kicker">数据细分</div>
+    <h2 id="detail-title"></h2>
+    <div id="detail-content"></div>
+  </dialog>
+  <dialog id="brand-film-dialog" class="film-dialog" aria-labelledby="film-title">
+    <div class="film-head"><h2 id="film-title">青荷康康 · 品牌片</h2><button id="close-brand-film" type="button" aria-label="关闭品牌片">×</button></div>
+    <video id="brand-film-video" controls playsinline preload="metadata" poster="assets/brand-film-poster.png">
+      当前浏览器无法播放此视频。
+    </video>
+  </dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

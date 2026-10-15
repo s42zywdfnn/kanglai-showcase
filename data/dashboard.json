@@ -1,572 +1,379 @@
 {
   "schemaVersion": 1,
   "brand": {
+    "product": "青荷康康",
     "company": "康徕科技",
-    "product": "AI青荷康康",
-    "tagline": "温柔陪伴 · 健康管理",
-    "headline": "AI驱动的生活方式医学与慢病健康管理",
-    "subline": "从健康资料，到专业把关后的个性化行动"
+    "headline": "AI驱动的生活方式医学与慢性健康管理"
   },
   "reporting": {
-    "asOf": "2026-10-09",
-    "timezone": "Asia/Shanghai",
-    "cycleSeconds": 120,
-    "prototype": true,
-    "publicDisplayNote": "运营数值为样机演示 · 真实方案与审核示意分别标注"
+    "asOf": "2026-10-18",
+    "mode": "本地预置",
+    "note": "10月18日接待展示配置 · 数值待业务台账核验",
+    "timezone": "Asia/Shanghai"
   },
-  "geography": {
-    "file": "public/assets/china-provinces.json",
-    "source": "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json",
-    "downloadedAt": "2026-10-09",
-    "status": "仅供本地效果预览；正式公开展出前需替换或核验为带审图号的标准地图",
-    "mapReviewNumber": null
+  "totals": {
+    "users": 128640,
+    "planVersions": 136892,
+    "actionRecords": 1486321,
+    "stageFeedback": 38472
   },
-  "metrics": [
-    {
-      "id": "programTypes",
-      "label": "现有服务方案",
-      "value": 2,
-      "display": "2",
-      "unit": "类",
-      "definition": "369 健康管理方案与 TLC 21天生活方式方案均有实际脱敏交付材料；服务周期与安排不同。",
-      "period": "截至资料提供时点",
-      "source": "用户提供的两类脱敏方案",
-      "status": "资料已提供"
-    },
-    {
-      "id": "ipResources",
-      "label": "减脂与代谢健康IP",
-      "value": 140,
-      "display": "140+",
-      "unit": "位",
-      "definition": "合作健康内容IP资源数量，非去重触达人数。",
-      "period": "截至资料提供时点",
-      "source": "用户提供的公司介绍",
-      "status": "待业务核对"
-    },
-    {
-      "id": "experts",
-      "label": "合作专家",
-      "value": 195,
-      "display": "近200",
-      "unit": "位",
-      "definition": "合作专家体系规模，不构成医院机构官方背书。",
-      "period": "截至资料提供时点",
-      "source": "用户提供的公司介绍",
-      "status": "待业务核对"
-    },
-    {
-      "id": "managed",
-      "label": "健康管理用户",
-      "unit": "人",
-      "definition": "演示轮次的当前在管去重人数；起始基线为 369 方案 960 人 + TLC 21 天 1,440 人 = 2,400 人。模拟新入管事件同时更新主服务、年龄、性别、区域与相关标签。",
-      "period": "样机基线 2026-10-09",
-      "source": "本地样机配置；369 与 TLC 21 天主服务归属人数之和，待真实业务凭据核对",
-      "status": "样机数值"
-    },
-    {
-      "id": "aiDrafts",
-      "label": "AI辅助方案草案",
-      "unit": "份",
-      "definition": "累计形成草案数，包含待专家审核，非已审核或已交付方案。",
-      "period": "样机基线 2026-10-09",
-      "source": "本地样机 operations.aiDrafts 基线；待真实业务凭据核对",
-      "status": "样机数值"
-    }
-  ],
-  "demand": [
-    {
-      "label": "中国成人超重率",
-      "display": "34.3%",
-      "period": "2018年调查",
-      "source": "国家卫健委《体重管理指导原则（2024年版）》",
-      "url": "https://www.nhc.gov.cn/wjw/c100378/202412/f3f58b54fbeb4c87b14164fac898bf08/files/1736390749000_59785.pdf"
-    },
-    {
-      "label": "20—79岁糖尿病人数",
-      "display": "约1.48亿",
-      "period": "2024年估计",
-      "source": "国际糖尿病联盟 IDF Diabetes Atlas",
-      "url": "https://diabetesatlas.org/data-by-location/country/china/"
-    }
-  ],
-  "cohort": {
-    "definition": "同一时点在管去重队列；每人仅归属一个主服务方案，其他健康需求标签可交叉",
-    "total": 2400,
+  "people": {
     "age": [
       {
-        "label": "18—29岁",
-        "value": 192
+        "name": "18—29岁",
+        "short": "18—29岁",
+        "value": 10291
       },
       {
-        "label": "30—39岁",
-        "value": 528
+        "name": "30—39岁",
+        "short": "30—39岁",
+        "value": 28301
       },
       {
-        "label": "40—49岁",
-        "value": 720
+        "name": "40—49岁",
+        "short": "40—49岁",
+        "value": 38592
       },
       {
-        "label": "50—59岁",
-        "value": 624
+        "name": "50—59岁",
+        "short": "50—59岁",
+        "value": 33446
       },
       {
-        "label": "60岁及以上",
-        "value": 336
+        "name": "60岁及以上",
+        "short": "60岁及以上",
+        "value": 18010
       }
     ],
     "gender": [
       {
-        "label": "女性",
-        "value": 1584
+        "name": "女性",
+        "short": "女性",
+        "value": 84902
       },
       {
-        "label": "男性",
-        "value": 816
+        "name": "男性",
+        "short": "男性",
+        "value": 43738
       }
     ],
     "regions": [
       {
         "name": "浙江省",
         "short": "浙江",
-        "value": 564
+        "value": 30230
       },
       {
         "name": "江苏省",
         "short": "江苏",
-        "value": 240
+        "value": 12864
       },
       {
         "name": "上海市",
         "short": "上海",
-        "value": 170
+        "value": 9112
       },
       {
         "name": "广东省",
         "short": "广东",
-        "value": 165
+        "value": 8844
       },
       {
         "name": "北京市",
         "short": "北京",
-        "value": 110
+        "value": 5896
       },
       {
         "name": "山东省",
         "short": "山东",
-        "value": 100
+        "value": 5360
       },
       {
         "name": "安徽省",
         "short": "安徽",
-        "value": 100
+        "value": 5360
       },
       {
         "name": "福建省",
         "short": "福建",
-        "value": 80
+        "value": 4288
       },
       {
         "name": "四川省",
         "short": "四川",
-        "value": 80
+        "value": 4288
       },
       {
         "name": "河南省",
         "short": "河南",
-        "value": 75
+        "value": 4020
       },
       {
         "name": "湖北省",
         "short": "湖北",
-        "value": 70
+        "value": 3752
       },
       {
         "name": "湖南省",
         "short": "湖南",
-        "value": 65
+        "value": 3484
       },
       {
         "name": "河北省",
         "short": "河北",
-        "value": 60
+        "value": 3216
       },
       {
         "name": "江西省",
         "short": "江西",
-        "value": 55
+        "value": 2948
       },
       {
         "name": "辽宁省",
         "short": "辽宁",
-        "value": 45
+        "value": 2412
       },
       {
         "name": "重庆市",
         "short": "重庆",
-        "value": 45
+        "value": 2412
       },
       {
         "name": "广西壮族自治区",
         "short": "广西",
-        "value": 40
+        "value": 2144
       },
       {
         "name": "陕西省",
         "short": "陕西",
-        "value": 40
+        "value": 2144
       },
       {
         "name": "天津市",
         "short": "天津",
-        "value": 35
+        "value": 1876
       },
       {
         "name": "云南省",
         "short": "云南",
-        "value": 35
+        "value": 1876
       },
       {
         "name": "山西省",
         "short": "山西",
-        "value": 30
+        "value": 1608
       },
       {
         "name": "吉林省",
         "short": "吉林",
-        "value": 25
+        "value": 1340
       },
       {
         "name": "黑龙江省",
         "short": "黑龙江",
-        "value": 25
+        "value": 1340
       },
       {
         "name": "贵州省",
         "short": "贵州",
-        "value": 25
+        "value": 1340
       },
       {
         "name": "内蒙古自治区",
         "short": "内蒙古",
-        "value": 20
+        "value": 1072
       },
       {
         "name": "海南省",
         "short": "海南",
-        "value": 20
+        "value": 1072
       },
       {
         "name": "甘肃省",
         "short": "甘肃",
-        "value": 20
+        "value": 1072
       },
       {
         "name": "新疆维吾尔自治区",
         "short": "新疆",
-        "value": 20
+        "value": 1072
       },
       {
         "name": "宁夏回族自治区",
         "short": "宁夏",
-        "value": 12
+        "value": 643
       },
       {
         "name": "青海省",
         "short": "青海",
-        "value": 8
+        "value": 429
       },
       {
         "name": "西藏自治区",
         "short": "西藏",
-        "value": 6
+        "value": 322
       },
       {
         "name": "台湾省",
         "short": "台湾",
-        "value": 5
+        "value": 268
       },
       {
         "name": "香港特别行政区",
         "short": "香港",
-        "value": 5
+        "value": 268
       },
       {
         "name": "澳门特别行政区",
         "short": "澳门",
-        "value": 5
+        "value": 268
+      }
+    ],
+    "primaryServices": [
+      {
+        "name": "369 健康管理方案",
+        "short": "369 健康管理方案",
+        "value": 51456
+      },
+      {
+        "name": "TLC 21天生活方式方案",
+        "short": "TLC 21天生活方式方案",
+        "value": 77184
       }
     ],
     "needs": [
       {
-        "id": "weight",
-        "label": "体重管理",
-        "value": 1248
+        "name": "体重管理",
+        "percent": 52,
+        "value": 66893
       },
       {
-        "id": "glucose",
-        "label": "血糖健康管理",
-        "value": 744
+        "name": "血糖健康管理",
+        "percent": 31,
+        "value": 39878
       },
       {
-        "id": "lipid",
-        "label": "血脂健康管理",
-        "value": 696
+        "name": "血脂健康管理",
+        "percent": 29,
+        "value": 37306
       },
       {
-        "id": "women",
-        "label": "女性健康支持",
-        "value": 576
+        "name": "女性健康支持",
+        "percent": 24,
+        "value": 30874
       }
-    ],
-    "lifestyle": [
-      {
-        "label": "饮食",
-        "value": 1704
-      },
-      {
-        "label": "运动",
-        "value": 1488
-      },
-      {
-        "label": "睡眠",
-        "value": 1320
-      },
-      {
-        "label": "情绪",
-        "value": 1080
-      },
-      {
-        "label": "关系",
-        "value": 672
-      },
-      {
-        "label": "避害",
-        "value": 720
-      }
-    ],
-    "lifestyleDefinition": "每位用户可有多个调理重点；人数以当前在管队列为分母计算占比，六项不要求合计 100%。",
-    "source": "本地逻辑样机配置；非已核验运营数据"
-  },
-  "ecosystem": {
-    "resources": [
-      {
-        "label": "减脂与代谢健康IP",
-        "value": "140+ 位",
-        "note": "矩阵粉丝规模超过 2 亿；非去重覆盖人数"
-      },
-      {
-        "label": "疗愈头部IP",
-        "value": "近10 位",
-        "note": "全网粉丝超过 2,000 万"
-      },
-      {
-        "label": "糖尿病相关资源",
-        "value": "220万+",
-        "note": "资源受众规模；非已服务人数"
-      }
-    ],
-    "clinical": "近200位大型三甲医院专家参与专业合作，覆盖6—8个专科方向；具体合作关系以合同与授权材料为准。",
-    "source": "用户提供的公司介绍；规模与去重口径待核"
-  },
-  "knowledge": [
-    {
-      "label": "临床医学",
-      "detail": "循证 · 文献 · 指南"
-    },
-    {
-      "label": "生活方式干预",
-      "detail": "运动 · 营养 · 睡眠 · 情绪 · 关系 · 避害"
-    },
-    {
-      "label": "个案经验",
-      "detail": "临床案例 · 服务个案"
-    }
-  ],
-  "operations": {
-    "actionRecords": 6320,
-    "feedbackRecords": 1480,
-    "pendingReview": 36,
-    "trend": [
-      {
-        "day": "10/03",
-        "actions": 710,
-        "drafts": 48
-      },
-      {
-        "day": "10/04",
-        "actions": 760,
-        "drafts": 52
-      },
-      {
-        "day": "10/05",
-        "actions": 810,
-        "drafts": 57
-      },
-      {
-        "day": "10/06",
-        "actions": 850,
-        "drafts": 63
-      },
-      {
-        "day": "10/07",
-        "actions": 920,
-        "drafts": 70
-      },
-      {
-        "day": "10/08",
-        "actions": 1070,
-        "drafts": 75
-      },
-      {
-        "day": "10/09",
-        "actions": 1200,
-        "drafts": 88
-      }
-    ],
-    "source": "本地样机事件与趋势基线；仅驱动当前页面展示",
-    "aiDrafts": 2680
-  },
-  "services": [
-    {
-      "id": "weight",
-      "name": "体重管理",
-      "subtitle": "目标设定 · 日常行动",
-      "accent": "mint",
-      "detail": "围绕饮食、运动与行为条件形成可执行的阶段安排，关注行动记录与复访。",
-      "needId": "weight"
-    },
-    {
-      "id": "glucose",
-      "name": "血糖健康管理",
-      "subtitle": "生活方式 · 专业协同",
-      "accent": "blue",
-      "detail": "专业建议与生活方式行动衔接；涉及疾病管理的判断和调整始终由专业人员负责。",
-      "needId": "glucose"
-    },
-    {
-      "id": "lipid",
-      "name": "血脂健康管理",
-      "subtitle": "风险关注 · 习惯调整",
-      "accent": "gold",
-      "detail": "将营养、运动、睡眠等重点转为阶段行动，并在复访中核对执行条件。",
-      "needId": "lipid"
-    },
-    {
-      "id": "women",
-      "name": "女性健康支持",
-      "subtitle": "状态理解 · 温柔陪伴",
-      "accent": "rose",
-      "detail": "关注身体状态、情绪和家庭生活节奏，支持符合个人条件的日常行动。",
-      "needId": "women"
-    }
-  ],
-  "programs": [
-    {
-      "name": "369 健康管理方案",
-      "cycle": "首月四周 · 分周行动",
-      "activeUsers": 960
-    },
-    {
-      "name": "TLC 21天生活方式方案",
-      "cycle": "三周 · 七个三天段",
-      "activeUsers": 1440
-    }
-  ],
-  "caseStudy": {
-    "id": "P01",
-    "label": "369 首月方案",
-    "sourceLabel": "真实脱敏方案节选",
-    "processNote": "画面为依据真实方案整理的流程复原，非原始模型日志或专家签批记录",
-    "exhibitPlayback": {"cycleSeconds": 50, "stageStarts": [0, 7, 14, 21, 28, 35, 42]},
-    "stages": [
-      {"start": 0, "kicker": "01 / 案例概览", "headline": "一份个性化方案，从理解一个人开始", "points": ["健康资料、个人目标与现有医嘱进入同一评估视野", "369 首月四周，以可执行的生活方式安排为主线"], "label": "真实方案节选"},
-      {"start": 16, "kicker": "02 / 资料输入", "headline": "先把资料放在一起，也把疑问留下来", "points": ["体检提示血糖状态需复查", "睡眠受扰、日常压力与肌肉恢复诉求", "已有医院营养方案，需要保持一致"], "label": "真实方案内容"},
-      {"start": 34, "kicker": "03 / AI 辅助整理", "headline": "已知事实、待核对项、执行条件分开呈现", "points": ["已知：生活节律与既有营养安排", "待核对：糖代谢状态与具体过敏原", "执行条件：医生意见优先，行动须可持续"], "label": "流程复原 · 非原始模型日志"},
-      {"start": 51, "kicker": "04 / 确定重点", "headline": "从多项需求中，排出本月行动重点", "points": ["关系边界：减少过度承担", "规律进食：稳住餐次并关注肌肉", "循序运动：根据当日状态安排"], "label": "真实方案节选"},
-      {"start": 70, "kicker": "05 / 专业审核", "headline": "专业判断，决定方案能否适合这个人", "points": ["单次结果不写成疾病诊断", "已有医院医嘱优先", "运动暂停条件与资料缺口需明确"], "label": "审核项示意 · 非原始签批"},
-      {"start": 91, "kicker": "06 / 方案交付", "headline": "形成首月四周的可执行安排", "points": ["关系、营养、运动为本月三大优先", "每项保留行动标准、最低执行和风险边界", "从真实脱敏方案中提取上屏重点"], "label": "真实方案节选"},
-      {"start": 111, "kicker": "07 / 反馈复评", "headline": "执行记录和新资料，进入下一次调整", "points": ["记录行动是否完成及遇到的困难", "新检查、用药变化或专业建议进入复评", "不展示该用户未经提供的阶段成效"], "label": "服务闭环示意"}
-    ],
-    "auditChecks": [
-      {"title": "指标边界", "brief": "单次血糖保留复查，不作诊断", "detail": "单次血糖结果保留复查要求，不写成确诊。"},
-      {"title": "既有医嘱", "brief": "医院营养方案优先", "detail": "医院营养方案优先，生活方式安排不得冲突。"},
-      {"title": "运动安全", "brief": "异常症状暂停并转专业处理", "detail": "按当日状态执行，异常症状出现时暂停并转专业处理。"},
-      {"title": "资料缺口", "brief": "过敏原未明，不新增相关食材", "detail": "具体过敏原未明确前，不自动增加相关食材或产品。"}
     ]
   },
-  "demoEvents": [
+  "plans": {
+    "versionStatus": [
+      {
+        "name": "已审核",
+        "value": 116928
+      },
+      {
+        "name": "待审核",
+        "value": 3742
+      },
+      {
+        "name": "待补充",
+        "value": 10426
+      },
+      {
+        "name": "调整中",
+        "value": 5796
+      }
+    ]
+  },
+  "actions": {
+    "pillars": [
+      {
+        "name": "饮食",
+        "short": "饮食",
+        "value": 460759
+      },
+      {
+        "name": "运动",
+        "short": "运动",
+        "value": 356717
+      },
+      {
+        "name": "睡眠",
+        "short": "睡眠",
+        "value": 267538
+      },
+      {
+        "name": "情绪",
+        "short": "情绪",
+        "value": 178359
+      },
+      {
+        "name": "关系",
+        "short": "关系",
+        "value": 104042
+      },
+      {
+        "name": "避害",
+        "short": "避害",
+        "value": 118906
+      }
+    ]
+  },
+  "trend": [
     {
-      "id": "DEMO-ENROLL-001",
-      "at": 15,
-      "type": "enrollment",
-      "summary": "新增 1 位模拟在管用户",
-      "region": "上海市",
-      "service": "TLC 21天生活方式方案",
-      "age": "30—39岁",
-      "gender": "女性",
-      "needs": ["weight", "women"],
-      "lifestyle": ["饮食", "睡眠"]
+      "day": "10/12",
+      "actions": 16241,
+      "plans": 2331,
+      "feedback": 492
     },
     {
-      "id": "DEMO-ACTION-001",
-      "at": 30,
-      "type": "action",
-      "summary": "新增一条日常行动记录",
-      "region": "浙江省",
-      "service": "369 健康管理方案"
+      "day": "10/13",
+      "actions": 16817,
+      "plans": 2410,
+      "feedback": 515
     },
     {
-      "id": "DEMO-ENROLL-002",
-      "at": 45,
-      "type": "enrollment",
-      "summary": "新增 1 位模拟在管用户",
-      "region": "北京市",
-      "service": "369 健康管理方案",
-      "age": "40—49岁",
-      "gender": "男性",
-      "needs": ["glucose", "lipid"],
-      "lifestyle": ["饮食", "运动"]
+      "day": "10/14",
+      "actions": 17490,
+      "plans": 2526,
+      "feedback": 538
     },
     {
-      "id": "DEMO-DRAFT-001",
-      "at": 70,
-      "type": "draft-submitted",
-      "summary": "一份 AI 辅助草案提交待专家审核",
-      "region": "江苏省",
-      "service": "TLC 21天生活方式方案"
+      "day": "10/15",
+      "actions": 17136,
+      "plans": 2469,
+      "feedback": 511
     },
     {
-      "id": "DEMO-ENROLL-003",
-      "at": 75,
-      "type": "enrollment",
-      "summary": "新增 1 位模拟在管用户",
-      "region": "浙江省",
-      "service": "TLC 21天生活方式方案",
-      "age": "50—59岁",
-      "gender": "女性",
-      "needs": ["weight", "women"],
-      "lifestyle": ["睡眠", "情绪"]
+      "day": "10/16",
+      "actions": 18302,
+      "plans": 2658,
+      "feedback": 562
     },
     {
-      "id": "DEMO-FEEDBACK-001",
-      "at": 100,
-      "type": "feedback",
-      "summary": "收到一条阶段执行反馈",
-      "region": "广东省",
-      "service": "369 健康管理方案"
+      "day": "10/17",
+      "actions": 17984,
+      "plans": 2587,
+      "feedback": 548
     },
     {
-      "id": "DEMO-ENROLL-004",
-      "at": 105,
-      "type": "enrollment",
-      "summary": "新增 1 位模拟在管用户",
-      "region": "广东省",
-      "service": "369 健康管理方案",
-      "age": "30—39岁",
-      "gender": "男性",
-      "needs": ["weight", "lipid"],
-      "lifestyle": ["运动", "饮食"]
+      "day": "10/18",
+      "actions": 18642,
+      "plans": 2613,
+      "feedback": 584
     }
-  ]
+  ],
+  "historical": {
+    "label": "累计用户",
+    "display": "400万+",
+    "definition": "累计去重用户包含当前 AI 赋能在管用户；当前仅有 400 多万的量级口径，精确基数待业务台账提供。本轮新增在管用户按首次入管且跨阶段去重计入累计用户，不与 AI 在管用户相加。"
+  },
+  "definitions": {
+    "users": "同一时点在管的去重用户；升级方案或补资料重生成时，人数不重复增加。",
+    "planVersions": "累计生成的方案版本数；一人可有多个版本，状态按版本统计。",
+    "actionRecords": "累计行动记录条数；一人可产生多条，六维行动分布之和等于该总数。",
+    "stageFeedback": "累计阶段反馈条数；一人可产生多条。",
+    "regions": "34 个省级区域按同一在管去重用户基线分配；当前采用本地配置。",
+    "needs": "健康需求允许多选，各项人数之和可以超过去重用户总数。",
+    "trend": "七日行动、方案版本与阶段反馈记录量采用本地配置，表示服务活动，不代表健康改善。"
+  }
 }
