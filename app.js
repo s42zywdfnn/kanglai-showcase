@@ -17,8 +17,25 @@ let baseline,state,geometry,selectedRegion='浙江省',operationNotice='',chartM
 let resumeAfterFilm=false;
 const countFrames=new WeakMap();
 
-function scale(){const s=Math.min(innerWidth/1920,innerHeight/1080);screen.style.transform=`translate(-50%,-50%) scale(${s})`;}
-addEventListener('resize',scale);scale();
+function scale(){
+  const viewport=globalThis.visualViewport;
+  const width=viewport?.width||document.documentElement.clientWidth||innerWidth;
+  const height=viewport?.height||document.documentElement.clientHeight||innerHeight;
+  const left=viewport?.offsetLeft||0,top=viewport?.offsetTop||0;
+  const s=Math.min(width/1920,height/1080);
+  screen.style.left=`${left+width/2}px`;
+  screen.style.top=`${top+height/2}px`;
+  screen.style.transform=`translate(-50%,-50%) scale(${s})`;
+}
+function refit(){scale();requestAnimationFrame(scale);}
+addEventListener('resize',refit);
+addEventListener('orientationchange',refit);
+document.addEventListener('fullscreenchange',refit);
+document.addEventListener('webkitfullscreenchange',refit);
+globalThis.visualViewport?.addEventListener('resize',refit);
+globalThis.visualViewport?.addEventListener('scroll',scale);
+if(globalThis.ResizeObserver)new ResizeObserver(refit).observe(document.documentElement);
+refit();
 function row(items,name){return items.find(x=>x.name===name);}
 function currentStage(){return state.current?.stage??0;}
 function gain(value,original,unit=''){const amount=value-original;return amount>0?`<small class="data-gain">本轮 +${fmt(amount)}${unit}</small>`:'';}
